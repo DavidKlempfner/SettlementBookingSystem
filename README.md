@@ -139,25 +139,6 @@ The test suite includes comprehensive coverage of:
 
 ## 🔧 Development
 
-### Project Structure
-Infotrack/
-├── Controllers/
-│   └── BookingController.cs      # REST API endpoints
-├── Services/
-│   ├── IBookingService.cs        # Service interface
-│   └── BookingService.cs         # Business logic implementation
-├── Repositories/
-│   ├── IBookingRepository.cs     # Repository interface
-│   └── BookingRepository.cs      # In-memory data storage
-├── Models/
-│   ├── Booking.cs                # Request model with validation
-│   └── BookingResult.cs          # Response model
-├── Converters/
-│   └── TimeOnlyJsonConverter.cs  # Custom JSON time handling
-├── Filters/
-│   └── BookingExceptionFilter.cs # Global exception handling
-└── CustomExceptions/
-    └── BookingConflictException.cs # Custom exception for conflicts
 ### Key Design Decisions
 
 1. **In-Memory Storage**: As per requirements, bookings are stored in memory and lost on restart
